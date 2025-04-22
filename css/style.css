@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* font-family: 'Libre Baskerville', serif; */
+
+/* #041562
+#11468F
+#DA1212*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 62.5%;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+p{
+    font-size: 1.5rem;
+}
+
+/* header */
+
+.miClass{
+    background-color: #041562;
+    position: sticky;
+    top: 0;
+}
+
+header img{
+    width: 80px;  
+}
+
+/*header ul{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav{
+    width: 40%;
+    
+} */
+.miClass a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+}
+
+
+/* main index */
+
+.banner{
+    text-align: center;
+    background-image: url(../medios/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 1px 1px 8px rgb(0, 0, 0);
+
+    color: #FFFFFF;
+    padding: 100px 0;
+}
+
+.textoBanner{
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+
+}
+
+.tituloBanner{
+    font-size: 4rem;
+}
+
+/* section vectores */
+.presentacion h2{
+    text-align: center;
+    text-decoration: underline;
+    color: #11468F;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.presentacion p{
+    color: #11468F;
+    
+}
+.padreFlex{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+}
+
+.presentacion img{
+    width: 200px;
+}
+
+.objetivo{
+    background-color: #041562;
+    padding: 10px;
+}
+.objetivo p{
+    color: #FFFFFF;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+/* destacados */
+
+.destacados h2{
+    text-align: center;
+    color:#11468F;
+    text-decoration:underline;
+    margin: 20px 0;
+}
+
+
+.nuevoIngreso,.promocion{
+    width: 30%;
+    background-color: #11468F;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.destacados img{
+    width: 70%;
+}
+
+
+
+/*Nosotros------------------------------------------------------------------------*/
+
+.contenedor-grid img{
+    width: 80%;
+    height: 80%;
+}
+
+.contenedor-grid{
+    display: grid;
+    /*Cantidad y tamaño*/
+    grid-template-columns: 30% 30% 30%; 
+    grid-template-rows: 80px 100px repeat(2,250px);
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "casa1 texto1 texto1"
+    "casa1 casa2 casa2"
+    "texto2 casa3 texto3";
+    /* acomoda la grilla */
+    justify-content: center;
+    /* acomoda a los hijos */
+    align-items: center; /*vertical*/
+    justify-items: center;/*horizontal*/
+}
+
+.grid-titulo-1{
+    grid-area: titulo;
+    
+}
+.grid-img-1{
+    grid-area: casa1;
+}
+.grid-texto-1{
+    grid-area: texto1;
+}
+.grid-img-3 { 
+    grid-area: casa2; 
+}
+.grid-texto-2 { 
+    grid-area: texto2; 
+}
+.grid-img-2 { 
+    grid-area: casa3; 
+}
+.grid-texto-3 { 
+    grid-area: texto3; 
+}
+
+/* Contacto----------------------------------------------------------------------- */
+.mainContacto h1{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: #041562;
+    margin: 20px 0px;
+}
+.mapa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+
+/* formulario */
+.mensaje{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3rem;
+    color: #041562;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.mainContacto form{
+    background-color: #11468F;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #ffffff;
+}
+input{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.boton{
+    width: 70px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    color:#11468F;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Footer----------------------------------------------------------------------------- */
+
+footer{
+    background-color: #041562;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+footer img, svg{
+    width: 50px;
+}
+
+.logoTelefono{
+    margin-left: 10px;
+}
+footer div{
+   
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .logoFacebook{
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+}
+footer .logoInstagram{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 25%;
+}
+
+
+
+/* media queries */
+/* mobile  hasta 500px */
+@media (max-width:500px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        width: 60px;  
+    }
+    nav{
+        width: 100%;
+    }
+
+    .contenedor-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 250px repeat(4,200px);
+        grid-template-areas: 
+        "titulo"
+        "texto1"
+        "casa1"
+        "texto2"
+        "casa3"
+        "texto3";
+    }
+    .grid-img-3 { 
+        display: none; 
+    }
+    .contenedor-grid p{
+        margin: 0px 10px;
+    }
+}
